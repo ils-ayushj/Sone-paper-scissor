@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stone, paper ,scissor</title>    
+    <link rel="stylesheet" href="style.css">
+    <script src="Stone-paper-scissor.js"></script>
+</head>
+<body>
+    <header class="header-section">
+        <h1>Select your choice</h1>
+    </header>
+    <div id="game">
+        <div id="userSelection">
+         
+           <ul>
+          <li class="selection" id="stone">
+            <img src="stone.png" alt="Stone" onclick="playWith('stone')"/>
+          </li>
+          <li class="selection" id="paper">
+            <img src="paper.png" alt="Paper" onclick="playWith('paper')"/>   
+          </li>
+          <li class="selection" id="scissor">
+            <img src="scissor.png" alt="Scisor" onclick="playWith('scissor')"/>
+          </li>
+           </ul>
+           <div class="">
+               <h1 style="float:left;padding-top:30px; ">LETS PLAY HERE</h1>
+           </div>
+           <div class="btn">
+           <button onclick="playGame()">Play</button>
+        </div>
+        </div>
+        <div id="result"></div>
+      </div>
+</body>
+</html>
